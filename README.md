@@ -1,34 +1,10 @@
-import math
+A. Cara Kerja Program
+	linked list program saya menggunakan implementasi Queue.Queue adalah barisan elemen/data di mana proses memasukkan/menambah elemen/data dilakukan pada posisi belakang (rear) dan proses mengeluarkan/mengambil elemen/data di lakukan pada posisi depan (fron). Prinsip antrean : FIFO (First In First Out).
+Operasi Queue
+- isFull : Untuk memeriksa apakah Queue sudah penuh.
+- isEmpty : Untuk memeriksa apakah Queue masih kosong.
+- enqueue : Untuk menambahkan data.
+- dequeue : Untuk mengeluarkan data.
 
-arr =["Arsel", "Avivah", "Daiva", ["Wahyu", "Wibi"]]
-list1 = ["Arsel", "Avivah", "Daiva"]
-list2 = ["Wahyu", "Wibi"]
-
-def jumpSearch(arr, x, n ):
-    step = math.sqrt(n)
-    prev = 0
-    while arr[int(min(step, n)-1)] < x:
-        prev = step
-        step += math.sqrt(n)
-        if prev >= n:
-            return -1
-    while arr[int(prev)] < x:
-        prev += 1
-        if prev == min(step, n):
-            return -1
-    if arr[int(prev)] == x:
-        return prev
-    return -1
-
-x = "Arsel"
-n = len(arr)
-index = jumpSearch(arr, x, n)
-print(x, "berada di indeks" ,"%.0f"%index)
-
-x = "Avivah"
-n = len(arr)
-index = jumpSearch(arr, x, n)
-print(x, "berada di indeks" ,"%.0f"%index)
-
-print(list2[0], "berada di indeks 3 pada kolom 0")
-print(list2[1], "berada di indeks 3 pada kolom 1")
+B. Fungsionalitas Program
+	Fungsional program adalah sebuah paradigma pemrograman, di mana dalam mengkonstruksi program kita dapat membuat solusi dengan membuat definisi daan spesifikasi fungsi, kemudian mengimplementasikan fungsi tersebut dengan bahasa fungsional.
